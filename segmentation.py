@@ -45,8 +45,10 @@ plt.scatter(rfm["Recency"], rfm["Monetary"], c=rfm["Cluster"], cmap='viridis')
 plt.xlabel("Recency")
 plt.ylabel("Monetary")
 plt.title("RFM Customer Segmentation")
+plt.savefig("output.png", dpi=300)
 plt.show()
 
 # Save output CSV
 rfm.to_csv("segmentation.csv")
 print("\nOutput CSV saved as 'segmentation.csv'")
+
